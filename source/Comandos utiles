@@ -1,0 +1,25 @@
+
+
+.. .. hint:: este es un "Consejo"
+
+.. .. warning:: Here be dragons! This topic covers a number of options that might alter your database.
+
+.. .. note:: Here be dragons! This topic covers a number of options that might alter your database.
+
+.. .. danger:: Here be dragons! This topic covers a number of options that might alter your database.
+
+.. .. topic:: Tenga en cuenta:
+
+          Este manual es de uso exclusivo de la empresa.
+
+.. Directive Types:        "attention", "caution", "danger", "error", "hint", "important", "note", "tip", "warning", "admonition"
+.. Doctree Elements:       attention, caution, danger, error, hint, important, note, tip, warning, admonition, title
+.. Directive Arguments:    None.
+.. Directive Options:      :class:, :name:
+.. Directive Content:      Interpreted as body elements.
+          
+.. ..sidebar:: Recuerde
+..         :subtitle: Para el acceso al panel de configuración
+    
+..        Debe solicitar el **nombre de usuario** y **contraseña** a su proveedor para acceder al panel de configuración
+

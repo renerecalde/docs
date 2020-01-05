@@ -3,63 +3,82 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*****************
+#################
 Manual de usuario
-*****************
+#################
 
+***********************
 Aplicación de ECOMMERCE
-#######################
+***********************
 
-Bienvenido al manual que le ensenará a utilizar su aplicación de Ventas en línea.
-
-.. note:: Recuerde solicitar el **nombre de usuario** y **contraseña** a su proveedor para acceder al panel de configuración.
+Bienvenido al manual que le ayudará a utilizar su aplicación de Ventas en línea.
 
 
-.. .. warning:: Here be dragons! This topic covers a number of options that might alter your database.
+**************
+Primeros pasos
+**************
 
-.. .. note:: Here be dragons! This topic covers a number of options that might alter your database.
-
-.. .. danger:: Here be dragons! This topic covers a number of options that might alter your database.
-
-.. .. topic:: Tenga en cuenta:
-
-          Este manual es de uso exclusivo de la empresa.
-
-          
-----------------
-
-Inicio de sesión
-================
-
-Para iniciar la sesión como usuario administrador del sitio usted debe ingresar en su navegador favorito a *http://* **su_dominio** */public/admin* e introducir su **usuario** y **contraseña**, asignado por su proveedor. Luego haga click en *Login*.
-
-.. figure:: images/01-login.png
-  :align: center
-
-  Acceso de usuario.
-
-.. seealso:: En este manual utilizaremos de ejemplo una empresa virtual llamada "RER decoración". Por lo tanto el dominio, datos e imágenes corresponderán a dicha empresa.
-
-.. topic:: Tenga en cuenta:
-
-        Este manual es de uso exclusivo de la empresa.
-
-
-
-
-
-
-
-
+Para dar sus primeros pasos en este sistema lo invitamos a seguir esta guía:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: ¿Cómo comenzar?  
+
+   sesion.rst
+   interfaz.rst
 
 
+.. topic:: *Recuerde*
+
+          Este manual es para uso exclusivo de la empresa.
+
+          Por favor no lo divulgue ni distribuya.
+
+--------------
+
+************
+Configurando
+************
+
+La aplicación se agrupa en secciones para facilitar su uso.
+
+Presenta primeramente las secciones de **GESTIÓN** ( CATÁLOGO, VENTAS, CLIENTES, MARKETING), que se usarán a diario para administrar las ventas.
+
+Y luego la sección de **CONFIGURACIÓN**. La cual se debe configurar desde el primer momento y cada vez que se actualicen sus componentes (modos de pago, métodos de envíos, impuestos, etc.)
+
+Recomendamos comenzar por la configuración:
+
+ 
+.. toctree::
+   :maxdepth: 2
+   :caption: Secciones  
+
+   configuracion.rst
+   catalogo.rst
+   
+
+
+------------
+
+
+***********
+¿Consultas?
+***********
+
+No dude en comunicarse con nosotros.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Ayuda  
+
+   contacto.rst
+
+
+
+----------------
 
 Índice
-######
+======
 
 * :ref:`genindex`
 * :ref:`modindex`

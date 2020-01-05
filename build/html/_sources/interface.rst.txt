@@ -1,0 +1,29 @@
+Interfaz del sistema
+====================
+
+La **interfaz** [#f1] de este sistema se compone de varias regiones.
+
+.. figure:: images/02-entorno-global.png
+     :align: center
+
+	Panel general con toda la información.
+
+Al ingresar a nuestra cuenta lo primero que encontramos es nuestro **Panel general**. En él podemos visualizar el estado de nuestra tienda y las novedades.
+
+También en la esquina superior derechecha encontramos un desplegable con las opciones de nuestra sesión (para nuestro usuario).
+
+  Como por ejemplo:
+* Mi cuenta (donde podremos modificar nuestros datos)
+* Cerrar sesión
+
+.. figure:: images/03-interfaz-usuario.png
+	:align: center
+
+	Opciones de usuario.
+
+
+
+
+.. rubric:: Footnotes
+
+.. [#f1] Interfaces de software: Son programas o parte de ellos, que permiten expresar las órdenes a la computadora o visualizar su respuesta.
