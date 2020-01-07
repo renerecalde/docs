@@ -28,11 +28,7 @@ Para dar sus primeros pasos en este sistema lo invitamos a seguir esta guía:
    interfaz.rst
 
 
-.. topic:: *Recuerde*
-
-          Este manual es para uso exclusivo de la empresa.
-
-          Por favor no lo divulgue ni distribuya.
+.. attention:: Este manual es para uso exclusivo de la empresa. Por favor no lo divulgue ni distribuya.
 
 --------------
 
