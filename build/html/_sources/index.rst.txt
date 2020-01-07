@@ -77,9 +77,9 @@ No dude en comunicarse con nosotros.
 
 ----------------
 
-Índice
-======
+.. Índice
+.. ======
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
