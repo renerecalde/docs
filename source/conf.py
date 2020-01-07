@@ -88,3 +88,5 @@ html_static_path = ['_static']
 
 #logotipo del ecommerce en la parte superior izquierda del manual.
 html_logo = '_static/logo.png'
+
+master_doc = 'index'
