@@ -33,7 +33,7 @@ release = '0.0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark','sphinx_rtd_theme','rst2pdf.pdfbuilder']
+extensions = ['recommonmark','sphinx_rtd_theme']
 
 pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Rodolfo Recalde'),]
 
