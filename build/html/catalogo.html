@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Contacto" href="contacto.html" />
+    <link rel="next" title="Ventas" href="ventas.html" />
     <link rel="prev" title="Configuración" href="configuracion.html" /> 
 </head>
 
@@ -96,11 +96,25 @@
 <li class="toctree-l2"><a class="reference internal" href="#taxones">Taxones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#productos">Productos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#inventario">Inventario</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#atributos">Atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#atributos">Atributos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#texto">Texto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#area-de-texto">Área de texto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#casilla-de-verificacion">Casilla de verificación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#numero-entero">Número entero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#porcentaje">Porcentaje</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fecha-y-hora">Fecha y hora</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fecha">Fecha</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selecciona">Selecciona</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiples-atributos">Múltiples atributos</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#opciones-de-producto">Opciones de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tipos-de-asociacion">Tipos de asociación</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="ventas.html">Ventas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cliente.html">Cliente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marketing.html">Marketing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Ayuda</span></p>
 <ul>
@@ -171,9 +185,9 @@
             
   <div class="section" id="catalogo">
 <h1>Catálogo<a class="headerlink" href="#catalogo" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="figure align-right" id="id9">
+<div class="figure align-right" id="id17">
 <img alt="_images/31-catalogo.png" src="_images/31-catalogo.png" />
-<p class="caption"><span class="caption-text">Menú de Catálogo.</span><a class="headerlink" href="#id9" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Menú de Catálogo.</span><a class="headerlink" href="#id17" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <p>El menú Catálogo contiene los ítems:</p>
 <ul class="simple">
@@ -189,88 +203,480 @@
 <span id="id1"></span><h2>Taxones<a class="headerlink" href="#taxones" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los Taxones son una forma de agrupar en <strong>categorías</strong> los diferentes productos.</p>
 <p>Los mismos se ordenarán en forma de <em>árbol de directorios</em> para facilitar su búsqueda y discriminación.</p>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id18">
 <img alt="_images/32-catalogo-taxones.png" src="_images/32-catalogo-taxones.png" />
-<p class="caption"><span class="caption-text">Taxones.</span><a class="headerlink" href="#id10" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Taxones.</span><a class="headerlink" href="#id18" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Truco</p>
 <p>Se recomienda el uso de <strong>taxones</strong> debido a la complejidad que implica administrar todos los productos de manera independiente.</p>
 </div>
 <p>Supongamos que deseemos crear un <em>nuevo taxón</em> que corresponderá a un conjunto de productos denominados <strong>cortinas</strong></p>
-<p>En ese caso  ingresamos a <strong>Crear</strong>. Colocamos un <strong>código</strong>, un <strong>nombre</strong> y permitimos que el sistema cree el <strong>Slug</strong> <a class="footnote-reference brackets" href="#id8" id="id2">1</a> automáticamente.</p>
-<div class="figure align-center" id="id11">
+<p>En ese caso  ingresamos a <strong>Crear</strong>. Colocamos un <strong>código</strong>, un <strong>nombre</strong> y permitimos que el sistema cree el <strong>Slug</strong> <a class="footnote-reference brackets" href="#id16" id="id2">1</a> automáticamente.</p>
+<div class="figure align-center" id="id19">
 <img alt="_images/33-catalogo-taxones2.png" src="_images/33-catalogo-taxones2.png" />
-<p class="caption"><span class="caption-text">Crear taxón.</span><a class="headerlink" href="#id11" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Crear taxón.</span><a class="headerlink" href="#id19" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <p>Podemos agregar una descripción e imágenes, de ser necesario.</p>
 <p>Seguidamente le damos click a <strong>Crear</strong> y veremos que nos aparece la nueva categoría.</p>
-<div class="figure align-center" id="id12">
+<div class="figure align-center" id="id20">
 <img alt="_images/34-catalogo-taxones3.png" src="_images/34-catalogo-taxones3.png" />
-<p class="caption"><span class="caption-text">Nuevo taxón.</span><a class="headerlink" href="#id12" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Nuevo taxón.</span><a class="headerlink" href="#id20" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
-<div class="figure align-right" id="id13">
+<div class="figure align-right" id="id21">
 <img alt="_images/35-catalogo-taxones4.png" src="_images/35-catalogo-taxones4.png" />
-<p class="caption"><span class="caption-text">Crear sub-taxón.</span><a class="headerlink" href="#id13" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Crear sub-taxón.</span><a class="headerlink" href="#id21" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <p>Si necesitamos incorporar un nuevo «sub-grupo», por ejemplo: <strong>Cortinas de tela</strong>.</p>
 <p>Ingresaremos en las opciones del taxón indicado por tres puntos (<strong>…</strong>) y seleccionaremos <strong>Crear</strong>.</p>
 <p>A continuación ingresaremos los nuevos datos y procederemos a crear este <em>nuevo taxón</em> <strong>dependiente del anterior</strong>.</p>
-<div class="figure align-center" id="id14">
+<div class="figure align-center" id="id22">
 <img alt="_images/36-catalogo-taxones5.png" src="_images/36-catalogo-taxones5.png" />
-<p class="caption"><span class="caption-text">Nuevo sub-taxón.</span><a class="headerlink" href="#id14" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Nuevo sub-taxón.</span><a class="headerlink" href="#id22" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <hr class="docutils" />
 <p>De esta forma podremos agregar taxones y subirlos o bajarlos de nivel conforme a nuestra administración de productos los requiera.</p>
 <p>Aquí vemos un ejemplo con varias categorías:</p>
-<div class="figure align-center" id="id15">
+<div class="figure align-center" id="id23">
 <img alt="_images/37-catalogo-taxones6.png" src="_images/37-catalogo-taxones6.png" />
-<p class="caption"><span class="caption-text">Ejemplo de árbol de taxones.</span><a class="headerlink" href="#id15" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Ejemplo de árbol de taxones.</span><a class="headerlink" href="#id23" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 </div>
 <div class="section" id="productos">
 <span id="id3"></span><h2>Productos<a class="headerlink" href="#productos" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Para ingresar un nuevo producto ingresamos a la sección productos.</p>
-<div class="figure align-center" id="id16">
+<p>Ingresamos a la sección productos.</p>
+<div class="figure align-center" id="id24">
 <img alt="_images/38-catalogo-productos.png" src="_images/38-catalogo-productos.png" />
-<p class="caption"><span class="caption-text">Productos.</span><a class="headerlink" href="#id16" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Productos.</span><a class="headerlink" href="#id24" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
-<div class="figure align-right" id="id17">
+<div class="figure align-right" id="id25">
 <img alt="_images/39-catalogo-productos2.png" src="_images/39-catalogo-productos2.png" />
-<p class="caption"><span class="caption-text">Tipos de productos.</span><a class="headerlink" href="#id17" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Tipos de productos.</span><a class="headerlink" href="#id25" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
-<p>Ingresamos a <strong>Crear</strong> y se abre un desplegable con dos tipos de productos:</p>
+<p>Al hacer click en <strong>Crear</strong> se abre un desplegable con dos tipos de productos:</p>
 <ul class="simple">
-<li><p><a href="#id19"><span class="problematic" id="id20">Simple_</span></a></p></li>
-<li><p><a href="#id21"><span class="problematic" id="id22">Configurable_</span></a></p></li>
+<li><p><a class="reference internal" href="#simple">Simple</a></p></li>
+<li><p><a class="reference internal" href="#configurable">Configurable</a></p></li>
 </ul>
-<p>Productos Simples: Los productos simples son los que se ofrecen en una única presentación, sin variedades posibles.</p>
-<p>O sea que no se puede optar por otros colores, ni tamaños, ni sabores, etc.</p>
-<p>Productos Configurables: Son aquellos que se ofrecen con, <strong>al menos una variedad</strong> posible.</p>
+<p><strong>Productos Simples:</strong> Los productos simples son los que se ofrecen en una única presentación, sin variedades posibles.</p>
+<p>Por lo tanto no se puede optar por otros colores, ni tamaños, ni sabores, etc.</p>
+<p><strong>Productos Configurables:</strong> Son aquellos que se ofrecen con, <strong>al menos una variedad</strong> posible.</p>
 <p>Ya sea por colores, tamaños, etc. o por una combinación de ellas. Por ejemplo: gaseosas de diferentes volúmenes y sabores.</p>
-<p>Elegimos el tipo de producto que deseamos crear (en el ejemplo un producto <strong>simple</strong>) y completamos el formulario que nos aparece</p>
-<div class="figure align-center" id="id18">
+<p id="simple">Elegimos el tipo de producto que deseamos crear (en el ejemplo un producto <strong>simple</strong>) y completamos el formulario que nos aparece</p>
+<div class="figure align-center" id="id26">
 <img alt="_images/40-catalogo-productos3.png" src="_images/40-catalogo-productos3.png" />
-<p class="caption"><span class="caption-text">Formulario de <em>productos simples</em>.</span><a class="headerlink" href="#id18" title="Enlace permanente a esta imagen">¶</a></p>
+<p class="caption"><span class="caption-text">Formulario de <em>productos simples</em>.</span><a class="headerlink" href="#id26" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
-<p>En el margen izquierdo se encuentran una serie de botones que permiten configurar características del producto. Esta lista es diferente en productos configurables.</p>
-<p>Finalmente le damos click al botón <strong>Crear</strong></p>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Los campos <strong>Meta palabras claves</strong> y <strong>Meta descripción</strong> se completan con las palabras más destacables y representativas que componen el título y la descripción respectivamente. Debe utilizar pocas palabras, estas no se mostrarán pero serán usadas por los buscadores.</p>
+</div>
+<p>Note que en la parte inferior del formulario se permite agregar información acerca del producto, para su envío.</p>
+<p>Allí se detallan las dimensiones, el peso, etc. Y se asígna una categoría de envío que es útil a la hora de determinar el precio del transporte.</p>
+<p>También es posible asignar una categoría impositiva que determinará el conjunto de impuestos a abonar por el producto.</p>
+<div class="figure align-center" id="id27">
+<img alt="_images/41-catalogo-productos4.png" src="_images/41-catalogo-productos4.png" />
+<p class="caption"><span class="caption-text">Envío e Impuestos.</span><a class="headerlink" href="#id27" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez completado el formulario vemos en el margen izquierdo una serie de botones que permiten configurar características del producto.</p>
+<p>Tenga en cuenta que esta lista es ligeramente diferente en productos configurables.</p>
+<div class="figure align-center" id="id28">
+<img alt="_images/42-catalogo-productos5.png" src="_images/42-catalogo-productos5.png" />
+<p class="caption"><span class="caption-text">Configuración de Productos.</span><a class="headerlink" href="#id28" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Ingresando a <strong>Taxonomía</strong> seleccionamos el <em>desplegable</em> de <strong>Taxón principal</strong> y le asignamos la categoría correspondiente al producto.</p>
+<p>A su vez podemos <em>tildar</em> los taxones superiores a la categoría seleccionada para que el producto se muestre también en ellos.</p>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Se recomienda tildar los taxones superiores a la categoría del producto a crear.</p>
+</div>
+<p>De <a class="reference internal" href="#atributos">Atributos</a> y Asociaciones hablaremos más adelante.</p>
+<p>Otra cosa que podemos y deberíamos agregar a nuestro producto es una o más imágenes.</p>
+<div class="figure align-center" id="id29">
+<img alt="_images/43-catalogo-productos6.png" src="_images/43-catalogo-productos6.png" />
+<p class="caption"><span class="caption-text">Imágenes.</span><a class="headerlink" href="#id29" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Es muy recomendable agregar imágenes propias (sin derechos de autor), en caso que no se cuente con un profesional procurar una buena calidad de imágen con mucha luz natural.</p>
+</div>
+<p>Por último (en un producto <strong>simple</strong>) podremos introducir las unidades que nos restan en el <a class="reference internal" href="#inventario">inventario</a> y realizar un seguimiento para que la venta del producto se detenga en el caso que no contemos con disponibilidad.</p>
+<div class="figure align-center" id="id30">
+<img alt="_images/44-catalogo-productos7.png" src="_images/44-catalogo-productos7.png" />
+<p class="caption"><span class="caption-text">Inventario del producto nuevo.</span><a class="headerlink" href="#id30" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>La administración del <a class="reference internal" href="#inventario-en-un-producto-configurable">inventario en un producto configurable</a> se comentará más adelante.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Si el <strong>seguimiento</strong> está <strong>Desactivado</strong>, el producto no aparecerá en el la sección <a class="reference internal" href="#inventario">Inventario</a> .</p>
+</div>
+<p>Finalmente le damos click al botón <strong>Crear</strong> y nuestro producto se podrá ver en la lista.</p>
 </div>
 <div class="section" id="inventario">
 <span id="id4"></span><h2>Inventario<a class="headerlink" href="#inventario" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para administrar el inventario disponemos de su sección.</p>
+<p>Aquí observaremos la lista de productos, las cantidades disponibles de cada uno y a los que se encuentran sin disponibilidad.</p>
+<p>Ingresando a <strong>editar</strong> podremos modificar la existencia y otras características en caso de ser necesario.</p>
+<div class="figure align-center" id="id31">
+<img alt="_images/45-catalogo-inventario.png" src="_images/45-catalogo-inventario.png" />
+<p class="caption"><span class="caption-text">Inventario.</span><a class="headerlink" href="#id31" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p id="seguimiento">El seguimiento permite monitorizar la existencia del producto conforme se vendan unidades, reduciendo su número en cada pedido.</p>
+<p>Si <strong>no se marca</strong> esta opción, el producto siempre estará disponble para la compra.</p>
+<div class="admonition attention">
+<p class="admonition-title">Atención</p>
+<p>Si seleccionamos <strong>con seguimiento</strong>, se detendrá la venta del producto cuando se agote la existencia.</p>
+</div>
+<div class="figure align-center" id="id32">
+<img alt="_images/46-catalogo-inventario2.png" src="_images/46-catalogo-inventario2.png" />
+<p class="caption"><span class="caption-text">Inventario.</span><a class="headerlink" href="#id32" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Mantenga actualizado el inventario de sus productos.</p>
+</div>
 </div>
 <div class="section" id="atributos">
 <span id="id5"></span><h2>Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección nos permite ingresar atributos que pueden ser compartidos por varios productos.</p>
+<p>Los mismos se mostrarán en una pestaña <em>como descripción del producto</em> cuando el cliente lo vea.</p>
+<div class="figure align-center" id="id33">
+<img alt="_images/47-catalogo-atributos.png" src="_images/47-catalogo-atributos.png" />
+<p class="caption"><span class="caption-text">Atributos.</span><a class="headerlink" href="#id33" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Crearemos diferentes atributos a modo de ejemplo, que luego se pueden ajustar a las necesidades de la empresa.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#texto">Texto</a></p></li>
+<li><p><a class="reference internal" href="#area-de-texto">Área de texto</a></p></li>
+<li><p><a class="reference internal" href="#casilla-de-verificacion">Casilla de verificación</a></p></li>
+<li><p><a class="reference internal" href="#numero-entero">Número entero</a></p></li>
+<li><p><a class="reference internal" href="#porcentaje">Porcentaje</a></p></li>
+<li><p><a class="reference internal" href="#fecha-y-hora">Fecha y hora</a></p></li>
+<li><p><a class="reference internal" href="#fecha">Fecha</a></p></li>
+<li><p><a class="reference internal" href="#selecciona">Selecciona</a></p></li>
+</ul>
+<p>Finalmente veremos como se agregan <a class="reference internal" href="#multiples-atributos-a-un-producto">múltiples atributos a un producto</a> .</p>
+<div class="section" id="texto">
+<span id="id6"></span><h3>Texto<a class="headerlink" href="#texto" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Aquí podemos agregar un simple <strong>texto</strong> como característica del producto.</p>
+<p>Vamos a ingresar un texto con una longitud mínima de <em>un</em> caracter alfanumérico y una máxima de <em>cinco</em>.</p>
+<div class="figure align-center" id="id34">
+<img alt="_images/48-catalogo-atributos2.png" src="_images/48-catalogo-atributos2.png" />
+<p class="caption"><span class="caption-text">Atributo Texto.</span><a class="headerlink" href="#id34" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez ingresado lo vemos en la lista de <strong>atributos</strong>.</p>
+<div class="figure align-center" id="id35">
+<img alt="_images/49-catalogo-atributos3.png" src="_images/49-catalogo-atributos3.png" />
+<p class="caption"><span class="caption-text">Lista de Atributos.</span><a class="headerlink" href="#id35" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p id="previamente">Ahora podemos asignar el <strong>atributo</strong> a cualquier <strong>producto</strong>.</p>
+<p>Tomemos de ejemplo el creado recientemente, ingresamos a:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Productos</span> <span class="o">&gt;</span> <span class="n">Editar</span> <span class="o">&gt;</span> <span class="n">Atributos</span>
+</pre></div>
+</div>
+<p>Y luego en el deslizable seleccionamos <em>texto</em> y hacemos click en <strong>Agregar atributos</strong></p>
+<div class="figure align-center" id="id36">
+<img alt="_images/50-catalogo-atributos4.png" src="_images/50-catalogo-atributos4.png" />
+<p class="caption"><span class="caption-text">Agregar Texto.</span><a class="headerlink" href="#id36" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Veremos que se agrega el atributo pudiendo ingresar el texto con las condiciones previamente determinadas. En el ejemplo como texto se utiliza la palabra <em>cinco</em>.</p>
+<div class="figure align-center" id="id37">
+<img alt="_images/51-catalogo-atributos5.png" src="_images/51-catalogo-atributos5.png" />
+<p class="caption"><span class="caption-text">Ejemplo Texto.</span><a class="headerlink" href="#id37" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Finalmente vemos como se visualiza el atributo en la pestaña del producto que se muestra al cliente.</p>
+<div class="figure align-center" id="id38">
+<img alt="_images/52-catalogo-atributos6.png" src="_images/52-catalogo-atributos6.png" />
+<p class="caption"><span class="caption-text">Atributo Texto visto por el cliente.</span><a class="headerlink" href="#id38" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="area-de-texto">
+<span id="id7"></span><h3>Área de texto<a class="headerlink" href="#area-de-texto" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Este atributo es similar al anterior, con la diferencia que permite incorporar un texto completo sin límites de caracteres.</p>
+<p>Primero agregamos el Atributo:</p>
+<div class="figure align-center" id="id39">
+<img alt="_images/53-catalogo-atributos7.png" src="_images/53-catalogo-atributos7.png" />
+<p class="caption"><span class="caption-text">Atributo Área de texto.</span><a class="headerlink" href="#id39" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Luego, al configurar un producto le agregamos el atributo como se explicó <a class="reference internal" href="#previamente">previamente</a> .</p>
+<div class="figure align-center" id="id40">
+<img alt="_images/54-catalogo-atributos8.png" src="_images/54-catalogo-atributos8.png" />
+<p class="caption"><span class="caption-text">Área de texto en un producto particular.</span><a class="headerlink" href="#id40" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez completado el texto a incorporar guardamos y podremos visualizar el texto en la página del cliente de la siguiente manera:</p>
+<div class="figure align-center" id="id41">
+<img alt="_images/55-catalogo-atributos9.png" src="_images/55-catalogo-atributos9.png" />
+<p class="caption"><span class="caption-text">Área de texto vista por el cliente.</span><a class="headerlink" href="#id41" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="casilla-de-verificacion">
+<span id="id8"></span><h3>Casilla de verificación<a class="headerlink" href="#casilla-de-verificacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para comenzar agregamos el atributo <strong>Casilla de verificación</strong>.</p>
+<p>El mismo nos incorporará un interruptor permitirá agregar un <strong>SI</strong> o un <strong>NO</strong> a la característica que especifiquemos en el Nombre (en el ejemplo <em>Casilla de verificación</em>).</p>
+<div class="figure align-center" id="id42">
+<img alt="_images/56-catalogo-atributos10.png" src="_images/56-catalogo-atributos10.png" />
+<p class="caption"><span class="caption-text">Casilla de verificación.</span><a class="headerlink" href="#id42" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Es útil agregar varias veces este atributo en productos que pueden <em>contener</em> o <em>no contener</em> una serie de características binomiales. Por ejemplo <strong>cocinas</strong>: <em>con</em> o <em>sin</em> horno, <em>con</em> o <em>sin</em> encendido eléctrico, etc. .</p>
+</div>
+<p>Al agregar el atributo al producto específico nos mostrará el interruptor y podremos <em>activarlo</em> o dejarlo <em>desactivado</em> según cuente o no con la característica el producto.</p>
+<div class="figure align-center" id="id43">
+<img alt="_images/57-catalogo-atributos11.png" src="_images/57-catalogo-atributos11.png" />
+<p class="caption"><span class="caption-text">Atributo Casilla de verificación.</span><a class="headerlink" href="#id43" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Por último comprobamos la vista en el cliente con un <strong>SI</strong> o un <strong>NO</strong></p>
+<div class="figure align-center" id="id44">
+<img alt="_images/58-catalogo-atributos12.png" src="_images/58-catalogo-atributos12.png" />
+<p class="caption"><span class="caption-text">Vista del atributo Casilla de verificación como cliente.</span><a class="headerlink" href="#id44" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="numero-entero">
+<span id="id9"></span><h3>Número entero<a class="headerlink" href="#numero-entero" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si deseamos incorporar una característica de la cual nuestro producto puede contener un número entero variable (ej: Hornallas en cocinas). Entoces debemos agregar este atributo.</p>
+<div class="figure align-center" id="id45">
+<img alt="_images/59-catalogo-atributos13.png" src="_images/59-catalogo-atributos13.png" />
+<p class="caption"><span class="caption-text">Número entero.</span><a class="headerlink" href="#id45" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Nuevamente en las opciones del producto incorporamos el atributo y el valor para el mismo en este producto en particular.</p>
+<div class="figure align-center" id="id46">
+<img alt="_images/60-catalogo-atributos14.png" src="_images/60-catalogo-atributos14.png" />
+<p class="caption"><span class="caption-text">Atributo Número entero.</span><a class="headerlink" href="#id46" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Finalmente vemos como lo muestra en el cliente la aplicación:</p>
+<div class="figure align-center" id="id47">
+<img alt="_images/61-catalogo-atributos15.png" src="_images/61-catalogo-atributos15.png" />
+<p class="caption"><span class="caption-text">Vista del atributo Número entero como cliente.</span><a class="headerlink" href="#id47" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="porcentaje">
+<span id="id10"></span><h3>Porcentaje<a class="headerlink" href="#porcentaje" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Al igual que en el número entero, en este caso deseamos incorporar un <strong>Porcentaje</strong>.</p>
+<div class="figure align-center" id="id48">
+<img alt="_images/62-catalogo-atributos16.png" src="_images/62-catalogo-atributos16.png" />
+<p class="caption"><span class="caption-text">Porcentaje.</span><a class="headerlink" href="#id48" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Dentro del producto ingresamos el atributo y el valor del porcentaje.</p>
+<div class="figure align-center" id="id49">
+<img alt="_images/63-catalogo-atributos17.png" src="_images/63-catalogo-atributos17.png" />
+<p class="caption"><span class="caption-text">Atributo Porcentaje.</span><a class="headerlink" href="#id49" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Y vemos como se muestra al cliente</p>
+<div class="figure align-center" id="id50">
+<img alt="_images/64-catalogo-atributos18.png" src="_images/64-catalogo-atributos18.png" />
+<p class="caption"><span class="caption-text">Atributo porcentaje como cliente.</span><a class="headerlink" href="#id50" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="fecha-y-hora">
+<span id="id11"></span><h3>Fecha y hora<a class="headerlink" href="#fecha-y-hora" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para ingresar un campo con <em>fecha y hora fijas</em> como atributo de un producto, se utiliza esta opción.</p>
+<div class="figure align-center" id="id51">
+<img alt="_images/65-catalogo-atributos19.png" src="_images/65-catalogo-atributos19.png" />
+<p class="caption"><span class="caption-text">Fecha y hora.</span><a class="headerlink" href="#id51" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Atención</p>
+<p>Para ingresar el campo <em>Formato</em> se utilizan los códigos de fecha y hora <a class="reference external" href="https://es.wikipedia.org/wiki/ISO_8601">ISO8601</a>.</p>
+</div>
+<p>En el producto además del atributo le asignamos los valores de fecha y hora.</p>
+<div class="figure align-center" id="id52">
+<img alt="_images/66-catalogo-atributos20.png" src="_images/66-catalogo-atributos20.png" />
+<p class="caption"><span class="caption-text">Atributo Fecha y hora.</span><a class="headerlink" href="#id52" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Por último el cliente lo verá de la siguiente manera:</p>
+<div class="figure align-center" id="id53">
+<img alt="_images/67-catalogo-atributos21.png" src="_images/67-catalogo-atributos21.png" />
+<p class="caption"><span class="caption-text">Fecha y hora como visualiza el cliente.</span><a class="headerlink" href="#id53" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="fecha">
+<span id="id12"></span><h3>Fecha<a class="headerlink" href="#fecha" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Igual a <a class="reference internal" href="#fecha-y-hora">Fecha y hora</a> sin necesidad de determinar la hora.</p>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Útil para indicar fechas de vencimiento.</p>
+</div>
+</div>
+<div class="section" id="selecciona">
+<span id="id13"></span><h3>Selecciona<a class="headerlink" href="#selecciona" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si queremos agregar una lista de opciones, de las cuales seleccionaremos una o varias para indicar como atributo del producto deberíamos usar esta opción.</p>
+<p>Para ello Creamos el atributo <strong>Selecciona</strong>.</p>
+<p>Añadimos las opciones que deseamos que contenga la lista y especificamos si se podra seleccionar más de una opción a la vez</p>
+<div class="figure align-center" id="id54">
+<img alt="_images/68-catalogo-atributos22.png" src="_images/68-catalogo-atributos22.png" />
+<p class="caption"><span class="caption-text">Añadiendo opciones a la lista Selecciona</span><a class="headerlink" href="#id54" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Luego especificamos cuál es el número mínimo y máximo de opciones a seleccionar. Y creamos el atributo.</p>
+<div class="figure align-center" id="id55">
+<img alt="_images/69-catalogo-atributos23.png" src="_images/69-catalogo-atributos23.png" />
+<p class="caption"><span class="caption-text">Agregando atributo <em>Selecciona</em>.</span><a class="headerlink" href="#id55" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Por otro lado en el producto, agregamos el atributo y seleccionamos la o las opciones que correspondan al producto en particular.</p>
+<div class="figure align-center" id="id56">
+<img alt="_images/70-catalogo-atributos24.png" src="_images/70-catalogo-atributos24.png" />
+<p class="caption"><span class="caption-text">Atributo <em>Selecciona</em> en configuración del producto.</span><a class="headerlink" href="#id56" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>De esta manera lo visualizará el cliente:</p>
+<div class="figure align-center" id="id57">
+<img alt="_images/71-catalogo-atributos25.png" src="_images/71-catalogo-atributos25.png" />
+<p class="caption"><span class="caption-text">Visualización de los atributos seleccionados.</span><a class="headerlink" href="#id57" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
+<div class="section" id="multiples-atributos">
+<span id="multiples-atributos-a-un-producto"></span><h3>Múltiples atributos<a class="headerlink" href="#multiples-atributos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para agregar múltiples atributos nos situamos en el botón <strong>Atributos</strong> de un producto.</p>
+<p>En el desplegable seleccionamos todos los atributos que quisieramos incorporarle al producto y hacemos click en Agregar atributos.</p>
+<p>Luego completamos los mismos y guardamos.</p>
+<div class="figure align-center" id="id58">
+<img alt="_images/72-catalogo-atributos26.png" src="_images/72-catalogo-atributos26.png" />
+<p class="caption"><span class="caption-text">Selección de Atributos.</span><a class="headerlink" href="#id58" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Finalmente el cliente verá los múltiples Atributos de esta manera:</p>
+<div class="figure align-center" id="id59">
+<img alt="_images/73-catalogo-atributos27.png" src="_images/73-catalogo-atributos27.png" />
+<p class="caption"><span class="caption-text">Visualización de los múltiples Atributos.</span><a class="headerlink" href="#id59" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+</div>
 </div>
 <div class="section" id="opciones-de-producto">
-<span id="id6"></span><h2>Opciones de producto<a class="headerlink" href="#opciones-de-producto" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="id14"></span><h2>Opciones de producto<a class="headerlink" href="#opciones-de-producto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Podremos crear opciones de productos que sean compartidas por varios como el color o los tamaños.</p>
+<p>Para crear estas opciones nos dirigimos a <strong>Opciones de producto</strong> y le damos click a <strong>Crear</strong>.</p>
+<div class="figure align-center" id="id60">
+<img alt="_images/74-catalogo-opciones.png" src="_images/74-catalogo-opciones.png" />
+<p class="caption"><span class="caption-text">Opciones de productos.</span><a class="headerlink" href="#id60" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Como ejemplo crearemos la opción <strong>Color</strong>, con dos variantes <strong>Blanco</strong> y <strong>Negro</strong>.</p>
+<p>Completamos los campos y para agregar cada variante presionamos en <em>Añadir valor</em>.</p>
+<div class="figure align-center" id="id61">
+<img alt="_images/75-catalogo-opciones2.png" src="_images/75-catalogo-opciones2.png" />
+<p class="caption"><span class="caption-text">Nueva opción <strong>Color</strong>.</span><a class="headerlink" href="#id61" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>También crearemos otra opción llamada <strong>Longitud</strong>. Repetimos el proceso pero esta vez agregamos tres variantes: <strong>Corto</strong>, <strong>Medio</strong> y <strong>Largo</strong>.</p>
+<div class="figure align-center" id="id62">
+<img alt="_images/76-catalogo-opciones3.png" src="_images/76-catalogo-opciones3.png" />
+<p class="caption"><span class="caption-text">Opción <strong>Longitud</strong>.</span><a class="headerlink" href="#id62" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Y creamos la nueva opción con el botón <strong>Crear</strong>.</p>
+<div class="figure align-center" id="id63">
+<img alt="_images/77-catalogo-opciones4.png" src="_images/77-catalogo-opciones4.png" />
+<p class="caption"><span class="caption-text">Crear opción <strong>Longitud</strong>.</span><a class="headerlink" href="#id63" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p id="configurable">Ahora vamos a Crear un producto <strong>Configurable</strong>.</p>
+<div class="figure align-center" id="id64">
+<img alt="_images/78-catalogo-opciones5.png" src="_images/78-catalogo-opciones5.png" />
+<p class="caption"><span class="caption-text">Crear producto <strong>Configurable</strong>.</span><a class="headerlink" href="#id64" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Este producto se llamará <strong>Barral de madera</strong>. Y en la lista <strong>Opciones de producto</strong> seleccionaremos las dos opciones que hemos creado, <em>Color</em> y <em>Longitud</em>.</p>
+<div class="figure align-center" id="id65">
+<span id="optamos"></span><img alt="_images/79-catalogo-opciones6.png" src="_images/79-catalogo-opciones6.png" />
+<p class="caption"><span class="caption-text">Seleccionar opciones.</span><a class="headerlink" href="#id65" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>El <strong>Método de selección variante</strong> determinará la forma en la que se muestren las opciones al cliente:</p>
+<ul class="simple">
+<li><p>La <a class="reference internal" href="#opcion-tipo-variante">Opción tipo variante</a> muestra una lista con todas las opciones.</p></li>
+<li><p>Las <a class="reference internal" href="#opciones-que-coinciden">Opciones que coinciden</a> muestra una serie de desplegables para seleccionar la combinación deseada.</p></li>
+</ul>
+<div class="figure align-center" id="id66">
+<img alt="_images/80-catalogo-opciones7.png" src="_images/80-catalogo-opciones7.png" />
+<p class="caption"><span class="caption-text">Formulario.</span><a class="headerlink" href="#id66" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Luego completaremos los otros ítems que deseemos. Ahora sólo nos detendremos a mostrar la imagen que agregamos:</p>
+<div class="figure align-center" id="id67">
+<img alt="_images/81-catalogo-opciones8.png" src="_images/81-catalogo-opciones8.png" />
+<p class="caption"><span class="caption-text">Imagen.</span><a class="headerlink" href="#id67" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Le damos click a <strong>Crear</strong> y nos mostrará la edición del producto. Aquí seleccionaremos <strong>Administrar variantes</strong>.</p>
+<div class="figure align-center" id="id68">
+<img alt="_images/82-catalogo-opciones9.png" src="_images/82-catalogo-opciones9.png" />
+<p class="caption"><span class="caption-text">Edición del producto.</span><a class="headerlink" href="#id68" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez que se abre el desplegable podremos elegir entre <em>Listar variantes</em>, <em>Crear</em> y <em>Generar</em>.</p>
+<div class="figure align-center" id="id69">
+<img alt="_images/83-catalogo-opciones10.png" src="_images/83-catalogo-opciones10.png" />
+<p class="caption"><span class="caption-text">Generar variantes.</span><a class="headerlink" href="#id69" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Vamos a elegir <strong>Generar</strong> y lo que hará es combinar las variantes seleccionadas previamente entre sí, para producir las distintas opciones de productos. En el ejemplo: Blanco: Chico, Mediano y Grande; y Negro: Chico, Mediano y Grande. En total 6 variedades de un mismo producto.</p>
+<div class="figure align-center" id="id70">
+<img alt="_images/84-catalogo-opciones11.png" src="_images/84-catalogo-opciones11.png" />
+<p class="caption"><span class="caption-text">Variantes del producto.</span><a class="headerlink" href="#id70" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Esto nos ayudará a configurar cada variedad del producto en particular.</p>
+<div class="figure align-center" id="id71">
+<img alt="_images/85-catalogo-opciones12.png" src="_images/85-catalogo-opciones12.png" />
+<p class="caption"><span class="caption-text">Configuración de precios para las variantes del producto.</span><a class="headerlink" href="#id71" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez configuradas todas podremos editar cada variante independientemente.</p>
+<div class="figure align-center" id="id72">
+<img alt="_images/86-catalogo-opciones13.png" src="_images/86-catalogo-opciones13.png" />
+<p class="caption"><span class="caption-text">Lista de variantes del producto.</span><a class="headerlink" href="#id72" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Dentro de la edición podremos modificar <strong>categorías de envíos</strong> (modificando así los cargos por envío), <strong>Impuestos</strong> y el <strong>Inventario</strong> de la variante del producto (administrado independientemente a diferencia del <em>producto simple</em>)..</p>
+<div class="figure align-center" id="id73">
+<img alt="_images/87-catalogo-opciones14.png" src="_images/87-catalogo-opciones14.png" />
+<p class="caption"><span class="caption-text">Edición de variantes del producto.</span><a class="headerlink" href="#id73" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="figure align-center" id="id74">
+<img alt="_images/88-catalogo-opciones15.png" src="_images/88-catalogo-opciones15.png" />
+<p class="caption"><span class="caption-text"><strong>Impuestos</strong> de la variante del producto.</span><a class="headerlink" href="#id74" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p id="inventario-en-un-producto-configurable">En el inventario de la variante del producto podremos indicar el número de unidades disponibles y realizar el <a class="reference internal" href="#seguimiento">seguimiento</a> de las mismas.</p>
+<div class="figure align-center" id="id75">
+<img alt="_images/89-catalogo-opciones16.png" src="_images/89-catalogo-opciones16.png" />
+<p class="caption"><span class="caption-text"><strong>Inventario</strong> de la variante del producto.</span><a class="headerlink" href="#id75" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Guardamos los cambios y podremos ver la lista de variantes para administrarlas.</p>
+<div class="figure align-center" id="id76">
+<img alt="_images/90-catalogo-opciones17.png" src="_images/90-catalogo-opciones17.png" />
+<p class="caption"><span class="caption-text">Lista de variantes.</span><a class="headerlink" href="#id76" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Finalmente podremos ver como visualiza el cliente las diferentes variantes de nuestro producto, dependiendo del <strong>Método de selección variante</strong> por el que <a class="reference internal" href="#optamos">optamos</a>.</p>
+<div class="figure align-center" id="id77">
+<span id="opcion-tipo-variante"></span><img alt="_images/91-catalogo-opciones18-2.png" src="_images/91-catalogo-opciones18-2.png" />
+<p class="caption"><span class="caption-text">Vista del cliente de un producto <em>Opción tipo variante</em>.</span><a class="headerlink" href="#id77" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="figure align-center" id="id78">
+<span id="opciones-que-coinciden"></span><img alt="_images/91-catalogo-opciones18.png" src="_images/91-catalogo-opciones18.png" />
+<p class="caption"><span class="caption-text">Vista del cliente de un producto <em>Opciones que coinciden</em>.</span><a class="headerlink" href="#id78" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
 </div>
 <div class="section" id="tipos-de-asociacion">
-<span id="id7"></span><h2>Tipos de asociación<a class="headerlink" href="#tipos-de-asociacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="id15"></span><h2>Tipos de asociación<a class="headerlink" href="#tipos-de-asociacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se asocia un producto a otro cuando ambos se utilizan en conjunto o están relacionados. Por ejemplo un cinturón y un pantalón, una jarra y vasos, etc.</p>
+<p>Al asociarlos lograremos mostrar como sugerencia los productos asociados al producto seleccionado.</p>
+<p>Para ello vamos a  <strong>Tipos de asociación</strong> e ingresamos a <strong>Crear</strong></p>
+<div class="figure align-center" id="id79">
+<img alt="_images/92-catalogo-asociacion.png" src="_images/92-catalogo-asociacion.png" />
+<p class="caption"><span class="caption-text">Tipos de asociación.</span><a class="headerlink" href="#id79" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Creamos un nuevo tipo de asociación. En este ejemplo <strong>Asociación 1</strong> .</p>
+<div class="figure align-center" id="id80">
+<img alt="_images/93-catalogo-asociacion2.png" src="_images/93-catalogo-asociacion2.png" />
+<p class="caption"><span class="caption-text">Creando Asociación 1.</span><a class="headerlink" href="#id80" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Luego ingresamos en el producto de interés y en el apartado <strong>Asociaciones</strong> seleccionamos los productos asociados.</p>
+<div class="figure align-center" id="id81">
+<img alt="_images/94-catalogo-asociacion3.png" src="_images/94-catalogo-asociacion3.png" />
+<p class="caption"><span class="caption-text">Agregando asociaciones.</span><a class="headerlink" href="#id81" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Una vez finalizado guardamos los cambios.</p>
+<div class="figure align-center" id="id82">
+<img alt="_images/95-catalogo-asociacion4.png" src="_images/95-catalogo-asociacion4.png" />
+<p class="caption"><span class="caption-text">Guardamos los cambios.</span><a class="headerlink" href="#id82" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>Finalmente el cliente podrá visualizar los productos asociados de la siguiente manera.</p>
+<div class="figure align-center" id="id83">
+<img alt="_images/96-catalogo-asociacion5.png" src="_images/96-catalogo-asociacion5.png" />
+<p class="caption"><span class="caption-text">Productos asociados.</span><a class="headerlink" href="#id83" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
 <hr class="docutils" />
 <p class="rubric">Notas:</p>
 <dl class="footnote brackets">
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
 <dd><p>Slug: Es un texto que se agrega luego del nombre de dominio y forma parte de la dirección que conduce hacia tu contenido. El slug sería la parte que se encuentra luego de la barra (/).</p>
 </dd>
 </dl>
@@ -285,7 +691,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="contacto.html" class="btn btn-neutral float-right" title="Contacto" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ventas.html" class="btn btn-neutral float-right" title="Ventas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="configuracion.html" class="btn btn-neutral float-left" title="Configuración" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

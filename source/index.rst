@@ -51,8 +51,9 @@ Recomendamos comenzar por la configuración:
 
    configuracion.rst
    catalogo.rst
-   
-
+   ventas.rst
+   cliente.rst
+   marketing.rst
 
 ------------
 
